@@ -1,0 +1,11 @@
+import numpy as np
+import cv2
+img = np.zeros((550, 570, 3))
+img
+cv2.rectangle(img,(480,250), (100,450), (0,255,0), 3)
+image = cv2.putText(img, 'House Drawing with OpenCV' ,(55, 25), cv2.FONT_HERSHEY_SIMPLEX, 1, (255, 0, 0), 3, cv2.LINE_AA)
+
+# Display image
+cv2.imshow("Image", img)
+cv2.waitKey()
+cv2.destroyAllWindows()
